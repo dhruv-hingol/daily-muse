@@ -4,6 +4,7 @@ import { ChatHeader } from "./ChatHeader";
 import { TypeSelector } from "./TypeSelector";
 import { MessageList } from "./MessageList";
 import { ChatInput } from "./ChatInput";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { useChatLogic } from "@/hooks/useChatLogic";
 import { copyMessageToClipboard } from "@/lib/utils/clipboard";
 import { APP_CONSTANTS } from "@/lib/utils/constants";
@@ -22,6 +23,8 @@ export default function ChatInterface() {
 
   return (
     <div className={styles.container}>
+      <ThemeToggle />
+
       <ChatHeader
         title={APP_CONSTANTS.TITLE}
         subtitle={APP_CONSTANTS.SUBTITLE}

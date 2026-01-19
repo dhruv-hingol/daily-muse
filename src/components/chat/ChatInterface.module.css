@@ -18,7 +18,12 @@
 .title {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #ff8a65 0%, #ff7043 50%, #ff6f00 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 50%,
+    var(--primary-dark) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -81,13 +86,13 @@
 .userMessage {
   align-self: flex-end;
   background: var(--message-user-bg);
-  color: white;
+  color: #1f2937;
   border-radius: 24px;
   border-bottom-right-radius: 8px;
   padding: 1rem 1.5rem;
   max-width: 60%;
   box-shadow: var(--shadow-md);
-  font-weight: 500;
+  font-weight: 600;
   transform: rotate(0.5deg);
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   position: relative;
@@ -102,9 +107,9 @@
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #ffab91;
+  border-top: 8px solid var(--accent-color);
   transform: rotate(45deg);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .userMessage:hover {
@@ -152,11 +157,11 @@
   background: linear-gradient(
     to right,
     transparent,
-    var(--accent-light),
+    var(--primary-light),
     transparent
   );
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .quoteText {
@@ -209,7 +214,7 @@
 
 .author {
   font-size: 1rem;
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-weight: 700;
   font-family: var(--font-handwritten);
 }
@@ -227,8 +232,8 @@
 }
 
 .copyButton {
-  background: rgba(255, 138, 101, 0.1);
-  color: var(--accent-color);
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--primary-color);
   padding: 0.6rem;
   border-radius: 50%;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -245,7 +250,7 @@
   position: absolute;
   inset: -3px;
   border-radius: 50%;
-  border: 2px dashed var(--accent-light);
+  border: 2px dashed var(--primary-light);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -256,10 +261,10 @@
 }
 
 .copyButton:hover {
-  background: var(--accent-color);
+  background: var(--primary-color);
   color: white;
   transform: scale(1.15) rotate(-8deg);
-  box-shadow: 0 4px 12px var(--accent-glow);
+  box-shadow: 0 4px 12px var(--primary-glow);
 }
 
 .copyButton:active {
@@ -331,10 +336,10 @@
 }
 
 .typeButton.active {
-  background: var(--accent-color);
+  background: var(--primary-color);
   color: white;
-  border-color: var(--accent-color);
-  box-shadow: 0 6px 16px var(--accent-glow);
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 16px var(--primary-glow);
   transform: translateY(-2px) scale(1.05);
   animation: wiggle 0.5s ease;
 }
@@ -485,16 +490,16 @@
 
 .input:focus {
   background: white;
-  border-color: var(--accent-color);
+  border-color: var(--primary-color);
   box-shadow:
-    0 0 0 4px var(--accent-glow),
+    0 0 0 4px var(--primary-glow),
     var(--shadow-md),
-    inset 0 2px 4px rgba(255, 138, 101, 0.1);
+    inset 0 2px 4px rgba(14, 165, 233, 0.1);
   transform: translateY(-2px) scale(1.01);
 }
 
 .sendButton {
-  background: var(--accent-color);
+  background: var(--primary-color);
   color: white;
   border-radius: 20px;
   padding: 0 2rem;
@@ -531,9 +536,9 @@
 }
 
 .sendButton:hover {
-  background: var(--accent-hover);
+  background: var(--primary-dark);
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 24px var(--accent-glow);
+  box-shadow: 0 8px 24px var(--primary-glow);
 }
 
 .sendButton:active {
@@ -594,37 +599,50 @@
   display: flex;
   gap: 8px;
   padding: 1.2rem 1.5rem;
-  background: white;
+  background: var(--message-bot-bg);
   border-radius: 24px;
   border-bottom-left-radius: 8px;
   align-self: flex-start;
   width: fit-content;
   box-shadow: var(--message-bot-shadow);
-  border: 2px solid rgba(255, 138, 101, 0.1);
+  border: 2px solid var(--glass-border);
   transform: rotate(-0.5deg);
 }
 
 .dot {
   width: 10px;
   height: 10px;
-  background: var(--accent-color);
+  background: var(--primary-color);
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
-  box-shadow: 0 2px 4px rgba(255, 138, 101, 0.3);
+  box-shadow: 0 2px 4px var(--primary-glow);
+  opacity: 0.6;
 }
 
 .dot:nth-child(1) {
   animation-delay: -0.32s;
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
 }
 
 .dot:nth-child(2) {
   animation-delay: -0.16s;
-  background: linear-gradient(135deg, var(--accent-hover), var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-light),
+    var(--primary-color)
+  );
 }
 
 .dot:nth-child(3) {
-  background: linear-gradient(135deg, var(--accent-color), #ff7043);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
 }
 
 @keyframes bounce {
