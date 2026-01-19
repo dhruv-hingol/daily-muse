@@ -1,35 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg-color: #fef9f3;
-  --bg-gradient: linear-gradient(135deg, #fef9f3 0%, #fff5eb 50%, #ffeedd 100%);
+  --bg-color: #fdfcfb;
+  --bg-gradient: linear-gradient(135deg, #fdfcfb 0%, #f8f9fa 50%, #f0f4f8 100%);
 
-  --text-primary: #2d2417;
-  --text-secondary: #6b5d4f;
-  --text-muted: #9d8b7a;
+  --surface-color: #f0f4f8;
+  --surface-elevated: #ffffff;
 
-  --accent-color: #ff8a65;
-  --accent-hover: #ff7043;
-  --accent-light: #ffccbc;
-  --accent-glow: rgba(255, 138, 101, 0.3);
+  --text-primary: #334155;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
 
-  --accent-blue: #64b5f6;
-  --accent-green: #81c784;
-  --accent-yellow: #ffd54f;
+  --primary-color: #0ea5e9;
+  --primary-light: #38bdf8;
+  --primary-dark: #0284c7;
+  --primary-glow: rgba(14, 165, 233, 0.3);
 
-  --glass-bg: rgba(255, 255, 255, 0.85);
-  --glass-border: rgba(109, 93, 79, 0.15);
+  --accent-color: #f59e0b;
+  --accent-hover: #d97706;
+  --accent-light: #fcd34d;
+  --accent-glow: rgba(245, 158, 11, 0.3);
 
-  --message-user-bg: linear-gradient(135deg, #ff8a65 0%, #ffab91 100%);
-  --message-bot-bg: #ffffff;
-  --message-bot-shadow: 0 2px 8px rgba(109, 93, 79, 0.08);
+  --accent-blue: #60a5fa;
+  --accent-green: #34d399;
+  --accent-yellow: #fbbf24;
 
-  --shadow-sm: 0 1px 3px rgba(109, 93, 79, 0.08);
-  --shadow-md: 0 4px 12px rgba(109, 93, 79, 0.1);
-  --shadow-lg: 0 8px 24px rgba(109, 93, 79, 0.12);
+  --glass-bg: rgba(240, 244, 248, 0.9);
+  --glass-border: rgba(51, 65, 85, 0.1);
+
+  --message-user-bg: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  --message-bot-bg: #f0f4f8;
+  --message-bot-shadow: 0 2px 8px rgba(51, 65, 85, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(51, 65, 85, 0.08);
+  --shadow-md: 0 4px 12px rgba(51, 65, 85, 0.1);
+  --shadow-lg: 0 8px 24px rgba(51, 65, 85, 0.12);
 
   --font-family: "Nunito", sans-serif;
   --font-handwritten: "Caveat", cursive;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1c1e;
+  --bg-gradient: linear-gradient(135deg, #1a1c1e 0%, #1e2023 50%, #22252a 100%);
+
+  --surface-color: #2d3135;
+  --surface-elevated: #383c42;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --primary-color: #7dd3fc;
+  --primary-light: #a5f3fc;
+  --primary-dark: #38bdf8;
+  --primary-glow: rgba(125, 211, 252, 0.3);
+
+  --accent-color: #fbbf24;
+  --accent-hover: #f59e0b;
+  --accent-light: #fcd34d;
+  --accent-glow: rgba(251, 191, 36, 0.3);
+
+  --accent-blue: #60a5fa;
+  --accent-green: #34d399;
+  --accent-yellow: #fbbf24;
+
+  --glass-bg: rgba(45, 49, 53, 0.9);
+  --glass-border: rgba(241, 245, 249, 0.1);
+
+  --message-user-bg: linear-gradient(135deg, #fbbf24 0%, #fcd34d 100%);
+  --message-bot-bg: #2d3135;
+  --message-bot-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -45,6 +90,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
+  transition:
+    background 0.4s ease,
+    color 0.3s ease;
 }
 
 button {
@@ -63,16 +111,22 @@ textarea {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 245, 235, 0.5);
+  background: rgba(240, 244, 248, 0.5);
   border-radius: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: rgba(26, 28, 30, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-light);
+  background: var(--primary-color);
   border-radius: 10px;
   border: 2px solid var(--bg-color);
+  opacity: 0.6;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-color);
+  background: var(--primary-dark);
+  opacity: 1;
 }
