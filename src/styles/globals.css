@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg-color: #fef9f3;
+  --bg-gradient: linear-gradient(135deg, #fef9f3 0%, #fff5eb 50%, #ffeedd 100%);
+
+  --text-primary: #2d2417;
+  --text-secondary: #6b5d4f;
+  --text-muted: #9d8b7a;
+
+  --accent-color: #ff8a65;
+  --accent-hover: #ff7043;
+  --accent-light: #ffccbc;
+  --accent-glow: rgba(255, 138, 101, 0.3);
+
+  --accent-blue: #64b5f6;
+  --accent-green: #81c784;
+  --accent-yellow: #ffd54f;
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(109, 93, 79, 0.15);
+
+  --message-user-bg: linear-gradient(135deg, #ff8a65 0%, #ffab91 100%);
+  --message-bot-bg: #ffffff;
+  --message-bot-shadow: 0 2px 8px rgba(109, 93, 79, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(109, 93, 79, 0.08);
+  --shadow-md: 0 4px 12px rgba(109, 93, 79, 0.1);
+  --shadow-lg: 0 8px 24px rgba(109, 93, 79, 0.12);
+
+  --font-family: "Nunito", sans-serif;
+  --font-handwritten: "Caveat", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 245, 235, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-light);
+  border-radius: 10px;
+  border: 2px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}

@@ -1,0 +1,60 @@
+
+[2026-01-09T13:09:41.378Z] IMAGE_GENERATION_ERROR: {}
+[2026-01-09T13:09:42.886Z] IMAGE_GENERATION_ERROR: {}
+[2026-01-09T13:10:36.184Z] IMAGE_GENERATION_ERROR: No image URL found in the model response.
+Stack: Error: No image URL found in the model response.
+    at handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__a624f272._.js:96:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async apiResolver (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)
+    at async PagesAPIRouteModule.render (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)
+    at async Module.handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__fabde0a0._.js:2946:13)
+    at async DevServer.runApi (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:392:37)
+    at async DevServer.handleRequestImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/base-server.js:909:17)
+    at async /home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:387:20
+    at async Span.traceAsyncFn (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:383:24)
+    at async invokeRender (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:248:21)
+    at async handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:447:24)
+    at async requestHandlerImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:496:13)
+    at async Server.requestListener (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/start-server.js:226:13)
+
+[2026-01-09T13:11:31.230Z] NO_URL_FOUND. Content: 
+
+[2026-01-09T13:11:31.231Z] IMAGE_GENERATION_ERROR: No image URL found in the model response.
+Stack: Error: No image URL found in the model response.
+    at handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__a624f272._.js:98:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async apiResolver (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)
+    at async PagesAPIRouteModule.render (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)
+    at async Module.handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__fabde0a0._.js:2946:13)
+    at async DevServer.runApi (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:392:37)
+    at async DevServer.handleRequestImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/base-server.js:909:17)
+    at async /home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:387:20
+    at async Span.traceAsyncFn (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:383:24)
+    at async invokeRender (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:248:21)
+    at async handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:447:24)
+    at async requestHandlerImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:496:13)
+    at async Server.requestListener (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/start-server.js:226:13)
+
+[2026-01-09T13:15:34.875Z] NO_URL_FOUND. Content: 
+
+[2026-01-09T13:15:34.875Z] IMAGE_GENERATION_ERROR: No image URL found in the model response.
+Stack: Error: No image URL found in the model response.
+    at handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__a624f272._.js:98:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async apiResolver (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)
+    at async PagesAPIRouteModule.render (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)
+    at async Module.handler (/home/dhruv-elixir/Documents/ai bot/.next/dev/server/chunks/[root-of-the-server]__fabde0a0._.js:2946:13)
+    at async DevServer.runApi (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:747:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/next-server.js:392:37)
+    at async DevServer.handleRequestImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/base-server.js:909:17)
+    at async /home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:387:20
+    at async Span.traceAsyncFn (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/trace/trace.js:157:20)
+    at async DevServer.handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/dev/next-dev-server.js:383:24)
+    at async invokeRender (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:248:21)
+    at async handleRequest (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:447:24)
+    at async requestHandlerImpl (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/router-server.js:496:13)
+    at async Server.requestListener (/home/dhruv-elixir/Documents/ai bot/node_modules/next/dist/server/lib/start-server.js:226:13)
