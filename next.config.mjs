@@ -6,8 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/daily-muse" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/daily-muse/" : "",
 };
 
 export default nextConfig;
