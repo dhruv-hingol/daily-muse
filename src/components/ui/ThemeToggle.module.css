@@ -1,7 +1,4 @@
 .toggleButton {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
   background: var(--glass-bg);
   border: 2px solid var(--glass-border);
   border-radius: 50%;
@@ -51,14 +48,5 @@
   to {
     opacity: 1;
     transform: rotate(0deg) scale(1);
-  }
-}
-
-@media (max-width: 768px) {
-  .toggleButton {
-    top: 1rem;
-    right: 1rem;
-    width: 45px;
-    height: 45px;
   }
 }

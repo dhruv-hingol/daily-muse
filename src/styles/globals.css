@@ -85,14 +85,19 @@
 
 body {
   font-family: var(--font-family);
-  background: var(--bg-gradient);
-  color: var(--text-primary);
+  background: #1a1a1a;
+  color: #e8eaed;
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
   transition:
     background 0.4s ease,
     color 0.3s ease;
+}
+
+[data-theme="light"] body {
+  background: var(--bg-gradient);
+  color: var(--text-primary);
 }
 
 button {

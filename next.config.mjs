@@ -2,12 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["tsx", "ts", "jsx", "js"],
-  devIndicators: {
-    buildActivity: false,
-    appIsrStatus: false,
-    buildActivityPosition: "bottom-right",
-  },
-  output: "export",
+  devIndicators: false,
   images: {
     unoptimized: true,
   },
