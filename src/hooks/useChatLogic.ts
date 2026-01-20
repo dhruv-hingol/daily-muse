@@ -86,6 +86,11 @@ export const useChatLogic = () => {
     }
   };
 
+  const clearChat = () => {
+    setMessages([DEFAULT_MESSAGE]);
+    setInputValue("");
+  };
+
   return {
     messages,
     inputValue,
@@ -95,5 +100,6 @@ export const useChatLogic = () => {
     setInputValue,
     setSelectedType,
     handleSend,
+    clearChat,
   };
 };

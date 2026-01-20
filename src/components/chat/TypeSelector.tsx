@@ -6,12 +6,13 @@ import {
   MessageIcon,
   LaughIcon,
   NewsIcon,
-  ImageIconComponent,
+  TrashIcon,
 } from "@/components/ui/Icons";
 
 interface TypeSelectorProps {
   selectedType: ContentType;
   onTypeChange: (type: ContentType) => void;
+  onClearChat: () => void;
 }
 
 const TYPE_OPTIONS = [
@@ -30,16 +31,12 @@ const TYPE_OPTIONS = [
     label: APP_CONSTANTS.TYPE_LABELS.news,
     icon: NewsIcon,
   },
-  {
-    value: "image" as ContentType,
-    label: APP_CONSTANTS.TYPE_LABELS.image,
-    icon: ImageIconComponent,
-  },
 ];
 
 export const TypeSelector: React.FC<TypeSelectorProps> = ({
   selectedType,
   onTypeChange,
+  onClearChat,
 }) => (
   <div className={styles.typeSelector}>
     {TYPE_OPTIONS.map((option) => {
@@ -55,5 +52,13 @@ export const TypeSelector: React.FC<TypeSelectorProps> = ({
         </button>
       );
     })}
+    <button
+      className={`${styles.typeButton} ${styles.clearButton}`}
+      onClick={onClearChat}
+      title="Clear chat"
+    >
+      <TrashIcon size={18} />
+      <span>Clear</span>
+    </button>
   </div>
 );
